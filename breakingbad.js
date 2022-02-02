@@ -11,7 +11,6 @@ async function getData() {
     const s3 = seasons.filter(x=>x === 3).length;
     const s4 = seasons.filter(x=>x === 4).length;
     const s5 = seasons.filter(x=>x === 5).length;
-    const s6 = seasons.filter(x=>x === 6).length;
 
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
