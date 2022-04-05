@@ -2,6 +2,8 @@ const url = 'https://www.breakingbadapi.com/api/death';
 async function getData() {
     const response = await fetch(url);
     const data = await response.json();
+    console.log(data);
+    
     const seasons = [];
     data.forEach(element => {
         seasons.push(element.season);
